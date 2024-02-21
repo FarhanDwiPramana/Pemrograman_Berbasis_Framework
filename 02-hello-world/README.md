@@ -79,7 +79,7 @@ Jika di browser telah tampil seperti gambar berikut ini, Selamat!
 
 Gantilah teks pada bagian atas dengan Nama - NIM Anda. Contoh seperti gambar berikut:
 ![Alt text](document/gambar-soal-3.png)
-Jawaban dibuktikan dengan hasil screenshot.
+Jawaban dibuktikan dengan hasil screenshot.<br>
 ![Alt text](document/soal3.png)
 Ketika Anda telah berhasil mengganti teks tersebut, Anda tidak perlu menjalankan perintah npm run dev dan tidak juga diperlukan me-reload halaman di browser. Tiba-tiba perubahan itu tampil, Mengapa terjadi demikian? Jelaskan!
 **Terjadi karena didukung dengan fitur hot reload yaitu ketika code diubah maka secara otomatis browser akan merefresh atau me-reload dengan sendirinya selama program masih dijalankan**
