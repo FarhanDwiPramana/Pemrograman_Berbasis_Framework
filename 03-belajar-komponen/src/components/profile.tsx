@@ -1,17 +1,23 @@
-import Image from "next/image";
+import Avatar from "./avatar";
+
+type CardProps = {
+  children: React.ReactNode;
+};
+
+function Card({ children }: CardProps) {
+  return <div className="card">{children}</div>;
+}
 
 export default function Profile() {
   return (
-    <Image
-      src="https://i.imgur.com/MK3eW3Am.jpg"
-      alt="Katherine Johnson"
-      width={100}
-      height={100}
-      style={{
-        maxWidth: "100%",
-        height: "auto",
-        margin: "13px",
-      }}
-    />
+    <Card>
+      <Avatar
+        size={100}
+        person={{
+          name: "Katsuko Saruhashi",
+          imageId: "YfeOqp2",
+        }}
+      />
+    </Card>
   );
 }
