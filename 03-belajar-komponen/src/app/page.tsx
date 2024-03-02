@@ -35,6 +35,6 @@ export default function Home() {
     //   <hr />
     //   <Todolist />
     // </section>
-    <Avatar />
+    <Profile />
   );
 }
