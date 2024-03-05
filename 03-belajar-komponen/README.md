@@ -266,3 +266,7 @@ export default function TodoList() {
 ### Jawab Soal 6
 
 ![alt text](/document/jawab-soal-6.png)
+
+### Jawab Soal 7,8,9
+
+![alt text](/document/jawab-soal-7-8-9.png)

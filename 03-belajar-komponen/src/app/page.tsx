@@ -4,6 +4,9 @@ import { Gallery } from "@/components/gallery";
 import Todolist from "@/components/todolist";
 import Bio from "@/components/bio";
 import Avatar from "@/components/avatar";
+import MyGallery from "@/components/mygallery";
+import MyProfile from "@/components/myprofile";
+import MyProfileV2 from "@/components/myprofilev2";
 
 export default function Home() {
   return (
@@ -35,6 +38,12 @@ export default function Home() {
     //   <hr />
     //   <Todolist />
     // </section>
-    <Profile />
+    // <Profile />
+
+    <section>
+      <MyGallery />
+      <MyProfile />
+      <MyProfileV2 />
+    </section>
   );
 }
