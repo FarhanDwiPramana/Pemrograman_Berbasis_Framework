@@ -11,15 +11,17 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
+import counterReducer from "../counter/naikTurunSlice";
 
 const persistConfig = {
-  key: process.env.NEXT_PUBLIC_FINGERPRINT_NAME, //simpan config di file .env.local
+  key: process.env.NEXT_PUBLIC_FINGERPRINT_NAME,
   storage,
   whitelist: ["auth"],
 };
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  counter: counterReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -28,7 +30,7 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredctions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
 });
